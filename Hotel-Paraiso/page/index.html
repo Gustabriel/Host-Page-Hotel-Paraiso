@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
@@ -14,34 +14,45 @@
 </head>
 <body>
     <header> 
-        <a href="#"> <img src="../img/logo.png" alt="Hotel Paraíso" title="Logo do Hotel Paraíso"></a>
-        <nav>
-            <li><a href="">Home</a></li>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Reservas</a></li>
-            <li><a href="">Contato</a></li>
+        <a href="#"> <img src="./img/logo.png" alt="Hotel Paraíso" title="Logo do Hotel Paraíso"></a>
+        <nav style="font-weight: bolder;">
+            <li><a href="#home">Home </a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+            <li><a href="#contato">Contato</a></li>
         </nav>
     </header>
-
-    <section class="hero">
+    
+    <section id="home" class="hero">
         <h1>Conheça este paraíso chamado Ubatuba</h1>
         <h3>"Lazer, conforto, praia limpa e alta astral"</h3>
         <a class="btn" href="">Saiba mais</a>
+        <ul class="grid">
+            <li>
+                <img src="./img/5estrelas.png"><p><cite>"Gostamos bastante, tudo muito limpo e cheiroso, café da manhã ótimo, funcionários atenciosos. Destaque mesmo para a higiene dos quartos, ótimo. Muito bem localizado também. Não precisamos de carro para o centro. Parabéns"</cite></p><p class="usercoment">@HeloGomes - abril de 2021</p>
+            </li>
+            <li>
+                <img src="./img/4estrelas.png"><p><cite>"Hotel muito bem localizado, próximo de tudo que precisamos, um pouco antigo, porém, limpo e com manutenção em dia, equipe muito atenciosa e solícita, excepcional. Conheço hotel há muito tempo, nunca deixou a desejar, voltarei sempre."</cite></p><p class="usercoment">@JairoSouzaSá - agosto de 2020</p>
+            </li>
+            <li id="invimedia">
+                <img src="./img/5estrelas.png"><p><cite>"Gostei! Hotel excelente. Atendimento nota 10. Café da manhã e jantar deliciosos e fartos. Piscina aquecida. Ambientes sempre limpos. Bar da piscina funciona o dia inteiro e com várias bebidas e snacks/lanches e cafe."</cite></p><p class="usercoment">@FranciscoMelo - fevereiro de 2021</p>
+            </li>
+        </ul>
     </section>
 
-    <section class="conheca-o-hotel">
+    <section id="sobre" class="conheca-o-hotel">
         <h3>Conheça o Hotel Paraíso!</h3>
         <p>Feche seus olhos, respire e imagine o paraíso. Um lugar cercado pela Serra do Mar e sua exuberante Mata Atlântica, onde você encontra paz, conforto, lazer e tranquilidade.</p>
         <hr>
         <ul class="grid">
-            <li class="small" style="background-image: url(../img/itacare-01.jpg);"><p>"Quartos conectados com a natureza."</p></li>
-            <li class="large" style="background-image: url(../img/itacare-02.jpg);"><p>"Uma vegetação linda."</p></li>
-            <li class="large" style="background-image: url(../img/itacare-03.jpg);"><p>"As praias mais lindas do Brasil."</p></li>
-            <li class="small" style="background-image: url(../img/itacare-04.jpg);"><p>"Mar cristalino, com quase 0 de poluição."</p></li>
+            <li class="small" style="background-image: url(./img/itacare-01.jpg);"><p>"Quartos conectados com a natureza."</p></li>
+            <li class="large" style="background-image: url(./img/itacare-02.jpg);"><p>"Uma vegetação linda."</p></li>
+            <li class="large" style="background-image: url(./img/itacare-03.jpg);"><p>"As praias mais lindas do Brasil."</p></li>
+            <li class="small" style="background-image: url(./img/itacare-04.jpg);"><p>"Mar cristalino, com quase 0 de poluição."</p></li>
         </ul>
     </section>
 
-    <section class="caracteristicas">
+    <section id="reservas" class="caracteristicas">
         <h3>O melhor Hotel pé na areia de Ubatuba</h3>
         <p>Implantado em uma área completamente arborizada e conectada a natureza, o Hotel Paraíso foi eleito o melhor Hotel pé na areia de toda região de Ubatuba. Aqui o Mar e as árvores serão seus companheiros e você terá ao seu redor as belezas da natureza como guia.</p>
         <hr>
@@ -64,7 +75,7 @@
         </ul>
     </section>
 
-    <section class="newsletter">
+    <section id="contato" class="newsletter">
         <h3>Newsletter</h3>
         <p>Assine nossa newsletter para se manter atualizado com nossos serviços e a programação de nossos centros culturais.</p>
         <hr>
@@ -76,13 +87,20 @@
         </form>
     </section>
 
+    <div style="text-align:center;">
+        &darr; Encontre a gente nos seguintes canais &darr;
+    </div>
+
     <footer>
         <ul>
-            <li><a href=""><i class="fab fa-github"></i></a></li>
-            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fas fa-phone-square"></i></a></li>
+            <li><a href="https://github.com/Gustabriel" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.facebook.com/gabriel.gustavo.102/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5511985781993&text=Ol%C3%A1%2C%20este%20%C3%A9%20o%20contato%20de%20Gabriel%20Gustavo%2C%20criador%20deste%20site." target="_blank"><i class="fas fa-phone-square"></i></a></li>
         </ul>
         <p>Todos os direitos reservados - Hotel Paraíso 2025. &copy; &trade;</p>
     </footer>
+    <script>
+        alert("<------------------------------ATENÇÃO-------------------------------> \n Este site foi feito como um material de estudos, não foi criado com nenhuma intenção de obter fins lucrativos, e qualquer semelhança que nele contém, é considerada uma mera coincidencia, todos os elementos que nele são ficticios. \n Espero que goste, caso tenha alguma sugestão de melhoria ou alteração, entre em contato comigo, os meios de contato estão no final da página. \n <------------------------------Obrigado :D---------------------------->")
+    </script>
 </body>
 </html>

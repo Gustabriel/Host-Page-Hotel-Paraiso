@@ -29,8 +29,9 @@ header {
     border-radius: 1rem;
     border-color: #191c03;
     width: 100%;
-    position: absolute;
-    margin: 0.250rem 0;
+    position: fixed;
+    z-index: 99;
+    margin-top: 0.250rem;
     padding: 0.125rem 3.1rem;
     display: flex;
     justify-content: space-between;
@@ -61,7 +62,7 @@ header li:last-child {
 
 /* ----- HERO ----- */
 .hero {
-    background-image: url(../img/hero.jpg);
+    background-image: url(./img/hero.jpg);
     background-size: cover;
     min-height: 100vh;
     color: #fff;
@@ -74,6 +75,7 @@ header li:last-child {
 
 .hero h1 {
     font-size: 3.2rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
 }
 .hero h3 {
@@ -86,17 +88,52 @@ header li:last-child {
     color: #191c03;
     padding: 1.25rem 3.125rem;
     text-transform: uppercase;
-    margin-top: 5rem;
+    margin: 4rem 0;
+}
+.hero .grid {
+    display: flex;
+    justify-content: space-around;
+}
+.hero .grid li {
+    background-color: #191c03d0;
+    border: 0.250rem solid #c4c63bd5;
+    border-radius: 0.25rem;
+    padding: 0 1.875rem;
+    text-align: center;
+    margin: 0 2.188rem;
+}
+.hero .grid li:hover {
+    background-color: #191c03f8;
+}
+.hero .grid li img {
+    padding: 0.625rem;
+    width: 8.375rem;
+}
+.hero .grid li p {
+    font-size: 0.813rem;
+}
+.hero .grid li .usercoment {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.900rem;
+    font-size: 0.55rem;
 }
 @media (max-width: 43.75rem) {
-    .hero h1 {font-size: 2.5rem;}
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-top: 6rem;
+    }
     .hero h3 {font-size: 1.5rem;}
-    .hero .btn {margin-top: 5rem;}
+    .hero .btn {margin: 1rem 0;}
+    .hero .grid {flex-flow: column;}
+    .hero .grid li {margin-bottom: 1.563rem;}
+    #invimedia {display: none}
+
 }
 
 /* ----- CONHEÇA O HOTEL ----- */
 .conheca-o-hotel {
-    background-color: #fff;
+    background-color: #c3c63b;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -148,14 +185,26 @@ header li:last-child {
 }
 .conheca-o-hotel .grid li.small {
     flex-basis: 40%;
+    border: 0.125rem solid;
+}
+.conheca-o-hotel .grid li.small:hover {
+    border: 0.525rem solid;
 }
 .conheca-o-hotel .grid li.large {
     flex-basis: 60%;
+    border: 0.125rem solid;
+}
+.conheca-o-hotel .grid li.large:hover {
+    flex-basis: 60%;
+    border: 0.525rem solid;
 }
 
 @media (max-width: 43.75rem) {
     .conheca-o-hotel .grid li.small, .conheca-o-hotel .grid li.large {
-        flex-basis: 100%
+        flex-basis: 100%;
+    }
+    .conheca-o-hotel .grid li.small:hover, .conheca-o-hotel .grid li.large:hover {
+        flex-basis: 100%;
     }
     .conheca-o-hotel h3 {
         text-align: center;
