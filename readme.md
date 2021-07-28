@@ -26,4 +26,5 @@
         #Sobre - Adicionada border nas imagens e um hover que engrossa a border ao passar cursor;
         #Link - Adicionado links ao menu e a também ao contato;
         #Alert - Adicionado informativo de que o site não contem fins lucrativos.
+        
 <------------------------------------------------- v0.02 ------------------------------------------------>
